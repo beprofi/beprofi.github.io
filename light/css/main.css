@@ -578,12 +578,17 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
 		background-size: contain ;
 		overflow: auto;
 		box-sizing: border-box;
-		/*border: 1px green solid;*/
+		
 	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3),
 	only screen and (min-resolution: 288dpi),
 	only screen and (min-resolution: 3dppx) {
+		.first_screen{
+			background: url(../img/480.png) right bottom no-repeat;
+			-webkit-background-size: 80% auto;
+			background-size: 80% auto;
+		}
 		.adv_text{
 			font-size: 4vw;
 		}
