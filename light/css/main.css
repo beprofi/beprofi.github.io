@@ -262,7 +262,7 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
 	.first_screen_text_block{
 		width: calc(100% / 3);
 
-		border: 1px red solid;
+		/*border: 1px red solid;*/
 	}
 	.first_screen_btn,.form_btn{
 		padding: 10px 33px;
