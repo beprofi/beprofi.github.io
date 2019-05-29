@@ -211,6 +211,9 @@ input{
 	font-size: 1rem;
 	color: #040404;
 }
+input:invalid{
+	box-shadow: none;
+}
 ::-webkit-input-placeholder {font-family: 'HelveticaNeueCyr', sans-serif; font-size: 1rem }
 ::-moz-placeholder          {font-family: 'HelveticaNeueCyr', sans-serif; font-size: 1rem } /* Firefox 19+ */
 :-moz-placeholder           {font-family: 'HelveticaNeueCyr', sans-serif; font-size: 1rem} /* Firefox 18- */
