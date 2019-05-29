@@ -21,4 +21,13 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+// маска для input
+$(function($){
+    $('.tel').mask('+7(999) 999-99-99');
+    $('.email').mask('');
+})
+// валидация формы
+$(function(){
+    $('#form').validate();
+})
 
