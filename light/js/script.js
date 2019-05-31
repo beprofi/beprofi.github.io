@@ -44,17 +44,3 @@ $(function(){
         $('html, body').animate({scrollTop: toOrder}, 1000);
     })
 });
-
-// отправка заявки
-$(function(){
-    $('#form').submit(function(){
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
-        }).done(function(){
-            alert('ОТПРАВЛЕНО')
-        })
-        return false;
-    })
-})
