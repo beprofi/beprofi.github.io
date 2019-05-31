@@ -52,6 +52,9 @@ $(function(){
             type: "POST",
             url: "mail.php",
             data: $(this).serialize()
+        }).done(function(){
+            alert('ОТПРАВЛЕНО')
         })
+        return false;
     })
 })
