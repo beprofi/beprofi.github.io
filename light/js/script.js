@@ -24,10 +24,34 @@ $('.owl-carousel').owlCarousel({
 // маска для input
 $(function($){
     $('.tel').mask('+7(999) 999-99-99');
-    $('.email').mask('');
 })
 // валидация формы
-$(function(){
-    $('#form').validate();
-})
 
+
+// прокрутка для стрелки вниз
+$(function(){
+    $('#arrow').on('click', function(event){
+        event.preventDefault();
+        var top =$('#second_screen').offset().top;
+        $('html, body').animate({scrollTop: top}, 1000);
+    })
+})
+// прокрутка для верхней кнопки Заказать вниз
+$(function(){
+    $('#first_screen_btn').on('click', function(event){
+        event.preventDefault();
+        var toOrder = $('#form').offset().top;
+        $('html, body').animate({scrollTop: toOrder}, 1000);
+    })
+});
+
+// отправка заявки
+$(function(){
+    $('#form').submit(function(){
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        })
+    })
+})

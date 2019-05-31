@@ -22,14 +22,14 @@
 					<h1 class="title first_screen_title">Световая панель:<br>дизайн и монтаж</h1>
 					<p class="text first_screen_text">Супер предложение по привлечению клиентов для малого и среднего бизнеса</p>
 					<p class="title first_screen_price">17 500 <span>₽</span></p>
-					<button class="first_screen_btn">Заказать</button>
+					<button class="first_screen_btn" id="first_screen_btn">Заказать</button>
 				</div>
 				<div class="arrow">
-					<a href="#"><img src="img/arrow.png" alt="#" class="arrow_img"></a>
+					<a href="#second_screen" id="arrow"><img src="img/arrow.png" alt="#" class="arrow_img"></a>
 				</div>
 			</div>
 		</div>
-		<div class="second_screen">
+		<div class="second_screen" id="second_screen">
 			<h2 class="title second_screen_title">Уникальный инструмент<br>наружной рекламы</h2>
 			<div class="adv_items_block container">
 				<div class="adv_item">
@@ -82,11 +82,11 @@
 					<h2 class="title form_block_title">Быстрее заказывай,<br>конкуренты не дремлют!</h2>
 					<form id="form" name="" class="form">
 						<div class="input_block">
-							<input type="text" placeholder="Имя" class="name" required>
-							<input type="email" placeholder="Ваша почта" class="email">
-							<input type="tel" placeholder="Ваш телефон" class="tel" required>
+							<input name="name" type="text" placeholder="Имя" class="name" required>
+							<input name="email" type="email" placeholder="Ваша почта" class="email">
+							<input name="tel" type="tel" placeholder="Ваш телефон" class="tel" required>
 						</div>
-						<button class="form_btn">Заказать</button>
+						<button type="submit" id="send" class="form_btn">Заказать</button>
 					</form>
 					<p class="text contacts_text">Если остались вопросы:</p>
 					<a href="tel:+7 812 32-777-23" class="tel" id="tel">+7 812 32-777-23</a>
