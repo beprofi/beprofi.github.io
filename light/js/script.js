@@ -22,9 +22,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 // маска для input
-$(function($){
-    $('.tel').mask('+7(999) 999-99-99');
-})
+
 // валидация формы
 
 
@@ -44,3 +42,27 @@ $(function(){
         $('html, body').animate({scrollTop: toOrder}, 1000);
     })
 });
+// отправка сообщения о заказе с сайта, pop up
+$(function(){
+        $('#form').submit(function(){
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $('.js_overlay_popup').fadeIn();
+            $(this).find('input').val('');
+            $('#form').trigger('reset');
+            
+        });
+        return false;
+    });
+})
+// закрытие pop up окна
+$('.popup_close_btn').click(function(){  //при клике по кнопке
+    $('.js_overlay_popup').fadeOut();
+});
+
+
+
+
