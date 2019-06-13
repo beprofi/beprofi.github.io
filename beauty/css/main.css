@@ -109,8 +109,20 @@ body{
   padding: 20px 0;
   margin-right: 80px;
 }
+.send_btn:hover{
+  background: linear-gradient(#237c53, #219653);
+}
+.send_btn:active{
+  background: linear-gradient(#219653, #237c53);
+}
 .more_btn{
   color: #989898;
+}
+.more_btn:hover{
+  color: #7b8c98;
+}
+.more_btn:hover{
+
 }
 /*MODAL*/
 .modal{
