@@ -9,7 +9,34 @@ $(document).ready(function(){
         draggable: true,
         arrows: false,
         infinite: true,
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
+        responsive: [{
+
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+          }
+
+        }, {
+
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+          }
+
+        },{
+
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+
+        }]
     });
     $('.slider-for').slick({
         slidesToShow: 1,
@@ -34,6 +61,14 @@ $(function(){
         $("#modal").removeClass('modal-is-active');
     })
 })
+// при размере окна меньше 1200px присвоение класса container modal_box
+$(function(){
+    var windowSize = $(window).width();
+    if(windowSize < 1200) {
+        $(".modal_box").addClass("container");
+    }
+})
+
 // отправка сообщения о заказе с сайта, pop up
 $(function(){
         $('#modal_form').submit(function(){
