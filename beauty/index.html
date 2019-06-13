@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+  	<link rel="stylesheet" href="css/main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  	<meta name="theme-color" content="#fafafa">
+	<title>Document</title>
+</head>
+<body>	
+	<header>
+		<div class="container header_wrapper">
+			<logo><a href="http://www.krasotka-kupchino.ru/"><img src="img/logo.png" alt=""></a></logo>
+			<div class="info_block">
+				<div class="subblock first_subblock">
+					<div class="info_block_item">
+						<p class="adress">ул. Бухарестская, д. 140</p>
+						<a href="tel:+7 812 96-96-074" class="tel">+7 (812) 96-96-074</a>
+					</div>
+					<div class="info_block_item">
+						<p class="adress">ул. Будапештская 97/2</p>
+						<a href="tel:+7 812 200-21-43" class="tel">+7 (911) 200-21-43</a>
+					</div>
+				</div>
+				<div class="subblock second_subblock">
+					<div class="info_block_item">
+						<p class="adress">Заставская 46 корпус 3</p>
+						<a href="tel:+7 812 920-00-46" class="tel">+7 (812) 920-00-46</a>
+					</div>
+					<div class="info_block_item">
+						<p class="adress">Шушары, ул. Окуловская д.4</p>
+						<a href="tel:+7 812 925-10-85" class="tel">+7 (812) 925-10-85</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <div class="info_block">
+				<div class="info_block_item adress">
+					<p>ул. Бухарестская, д. 140</p>
+					<p>ул. Будапештская 97/2</p>
+					<p>Заставская 46 корпус 3</p>
+					<p>Шушары, ул. Окуловская д.4</p>
+				</div>
+				<div class="info_block_item tel">
+					<a href="">+7 (812) 96-96-074</a>
+					<a href="">+7 (911) 200-21-43</a>
+					<a href="">+7 (812) 920-00-46</a>
+					<a href="">+7 (812) 925-10-85</a>
+				</div>
+			</div> -->
+		</div>
+	</header>
+	<main>
+		<div class="slider-wrap">
+			<div class="slider-nav">
+				<div class="item-nav"><img src="img/1.png" alt="#"></div>
+    			<div class="item-nav"><img src="img/2.png" alt="#"></div>
+    			<div class="item-nav"><img src="img/3.png" alt="#"></div>
+    			<div class="item-nav"><img src="img/1.png" alt="#"></div>
+    			<div class="item-nav"><img src="img/2.png" alt="#"></div>
+    			<div class="item-nav"><img src="img/3.png" alt="#"></div>
+			</div>
+			<div class="slider-for">
+				<div class="slider-for__item">
+					<p class="title">Свадебные причёски <span>2999 ₽</span></p>
+					<p class="offer_term">Акция действует в наших салонах<br> и при вызове мастера на дом</p>
+				</div>
+				<div class="slider-for__item">
+					<p class="title">Причёска + макияж <span>5999 ₽</span></p>
+					<p class="offer_term">Акция действует в наших салонах<br> и при вызове мастера на дом</p>
+				</div>
+    			<div class="slider-for__item">
+    				<p class="title">Наращивание ресниц <span>1999 ₽</span></p>
+    				<p class="offer_term">Специальное предложение для невест <br>в салоне на Заставской 46, корпус 3</p>
+    			</div>
+    			<div class="slider-for__item">
+					<p class="title">Свадебные причёски <span>2999 ₽</span></p>
+					<p class="offer_term">Акция действует в наших салонах<br> и при вызове мастера на дом</p>
+				</div>
+				<div class="slider-for__item">
+					<p class="title">Причёска + макияж <span>5999 ₽</span></p>
+					<p class="offer_term">Акция действует в наших салонах<br> и при вызове мастера на дом</p>
+				</div>
+    			<div class="slider-for__item">
+    				<p class="title">Наращивание ресниц <span>1999 ₽</span></p>
+    				<p class="offer_term">Специальное предложение для невест <br>в салоне на Заставской 46, корпус 3</p>
+    			</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="btn_block">
+				<a href="#" class="btn send_btn" id="modal_btn">Отправить заявку</a><a href="http://www.krasotka-kupchino.ru/services/svadba/" class="btn more_btn">Подробнее</a>
+			</div>
+<!-- modal form start -->
+			<div class="modal" id="modal">
+				<div class="modal_box" id="modal_box">
+					<form action="" id="modal_form" class="modal_form">
+						<div class="modal_close" id="modal_close">
+							<a href="#"><img src="img/close.png" alt="close"></a>
+						</div>
+						<input type="text" name="name" placeholder="Имя" required="">
+						<select name="offer" id="offer" autocomplete="off" required="">
+							<option value="Свадебная причёска 2999 ₽">Свадебная причёска 2999 ₽</option>
+							<option value="Причёска + макияж 5999 ₽">Причёска + макияж  5999 ₽</option>
+							<option value="Наращивание ресниц 1999 ₽">Наращивание ресниц 1999 ₽</option>
+						</select>
+						<!-- <input type="date" name="date" placeholder="Дата" required=""> -->
+						<input type="tel" name="tel" placeholder="Телефон" required="">
+						<button type="submit" class="btn form_btn" id="form_btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+<!-- modal form end -->
+<!-- pop up start -->
+			<div class="overlay js_overlay_popup">
+				<div class="popup js_popup">
+					<div class="popup_close_btn">
+						<a href="#"><img src="img/close.png" alt="close"></a>
+					</div>
+					<div class="popup_img">
+						<img src="img/mail.png" alt="#">
+					</div>
+					<p class="popup_title">Заявка принята!</p>
+					<p class="popup_text">Мы скоро позвоним</p>
+				</div>
+			</div>
+<!-- pop up end -->
+		</div>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/script.js"></script>	
+</body>
+</html>
